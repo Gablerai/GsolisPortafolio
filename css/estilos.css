@@ -1,0 +1,250 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: LocalBrewery;
+  src: url("/fonts/LocalBrewerySans.otf") format("Opentype");
+}
+@font-face {
+  font-family: Finland;
+  src: url("/fonts/Finland Rounded Thin.otf") format("Opentype");
+}
+h1 {
+  font-family: "Gogoia";
+  font-size: clamp(3rem, 10vw, 5rem);
+  color: white;
+}
+
+h2 {
+  font-family: "LocalBrewery";
+}
+
+h3 {
+  font-family: "Finland";
+}
+
+h4 {
+  font-family: "Finland";
+}
+
+p {
+  font-family: "Finland";
+  font-size: clamp(1rem, 10vw, 1rem);
+}
+
+a {
+  text-decoration: none;
+  text-emphasis: none;
+  font-family: "Finland";
+  font-size: clamp(2rem, 10vw, 1.3rem);
+}
+
+i {
+  font-size: clamp(3rem, 10vw, 4rem);
+  color: white;
+}
+
+label {
+  font-family: "LocalBrewery";
+  font-size: clamp(2rem, 10vw, 1rem);
+  color: white;
+}
+
+body {
+  background-color: #000000;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.container {
+  background: none;
+  padding: 0;
+  border-radius: 0px;
+}
+
+.container-fluid-lg {
+  width: 100vw;
+  height: 110vh;
+}
+
+.presentacion {
+  background-image: url("/img/presentacion.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.parte2 {
+  background-image: url("/img/fotoCamara.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 290vh;
+  background-repeat: no-repeat;
+}
+
+.portafolio {
+  height: 120vw;
+  width: 100vw;
+}
+
+.footer {
+  background-color: #7C1B04;
+}
+
+.carouselExampleControls {
+  width: 100%;
+  height: auto;
+}
+
+.masonry {
+  column-count: 2;
+  column-gap: 0;
+  margin-bottom: 100px;
+}
+
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media (max-width: 991px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media (max-width: 767px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__backdrop::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  filter: blur(2px);
+  left: 50%;
+  top: 50%;
+  transform: scale(11);
+  opacity: 0.3;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fancybox__container {
+  --fancybox-bg: #000;
+  --fancybox-thumbs-width: 48px;
+  --fancybox-thumbs-ratio: 1;
+  --carousel-button-bg: rgb(91 78 76 / 74%);
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+.fancybox__nav {
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+  left: 20px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+  right: 20px;
+}
+
+.carousel__button.is-close {
+  right: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.fancybox__slide {
+  padding: 8px 88px;
+}
+
+/* Thumbnails */
+.fancybox__thumbs .carousel__slide {
+  padding: 8px 8px 16px 8px;
+}
+
+.is-nav-selected::after {
+  display: none;
+}
+
+.fancybox__thumb {
+  border-radius: 6px;
+  opacity: 0.4;
+}
+
+.fancybox__thumb:hover,
+.is-nav-selected .fancybox__thumb {
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.is-nav-selected .fancybox__thumb::after {
+  display: none;
+}
+
+.form-control {
+  font-family: "Finland";
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  border-color: #A8A8A8;
+  color: white;
+  background-color: #A8A8A8;
+  background-clip: padding-box;
+  border-radius: 30px;
+}
+
+input[type=text], input[type=password] {
+  font-family: "Finland";
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  height: 45px;
+  color: white;
+  line-height: 2;
+  background-color: #A8A8A8;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-color: #A8A8A8;
+  background-clip: padding-box;
+  border-radius: 30px;
+}
+
+.boton {
+  font-family: "LocalBrewery";
+  font-size: 1.5rem;
+  padding: 5px 30px;
+  border-color: #CDAB18;
+  border: 3px solid #CDAB18;
+  background-color: #000000;
+  color: white;
+  border-radius: 40px;
+}
+
+.boton:hover {
+  background-color: #CDAB18;
+  color: white;
+}
